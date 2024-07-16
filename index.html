@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1 </title>
+    
+</head>
+<body>
+    <section id="preguntas">
+        <div class="container">
+            <h1>Actividad 1 Base de Datos </h1><hr>
+            <h2> 1¿Qué es un Dato?</h2>
+            <p>Un dato es una unidad básica de información que puede ser un número, una palabra, una fecha, o cualquier tipo de hecho que pueda ser registrado. Es lo más simple y elemental, como el nombre de una persona o una cifra de ventas.</p>
+            <h2>2. ¿Qué es Información?</h2>
+            <p>La información es un conjunto de datos procesados y organizados que tienen significado y utilidad para el usuario. Es el resultado de interpretar datos y presentarlos de manera comprensible y útil.</p>
+            <h2>3. ¿Diferencia entre Dato e Información?</h2>
+            <p> <b>Dato:</b> Son hechos aislados que no tienen significado por sí mismos. <br>
+                <b>Información:</b> Son datos organizados y contextualizados que tienen significado y valor para quien los usa.</p>
+            <h2>4. ¿Tipos de Datos?</h2>
+            <p>Los tipos de datos definen qué tipo de valor puede almacenar un dato. Los más comunes son:</p>
+            <ul> <b>Numéricos:</b>INTEGER, FLOAT, DOUBLE</ul>
+            <ul> <b>Texto:</b> CHAR, VARCHAR, TEXT</ul>
+            <ul> <b>Fecha y Hora:</b> DATE, TIME, DATETIME</ul>
+            <ul> <b>Booleanos:</b> BOOLEAN</ul>
+            <ul><b>Binarios:</b> BLOB, BYTEA</ul>
+            <ul> <b>Datos de Identificación:</b> UUID
+            </ul>
+            <h2>5. ¿Qué es un Modelado de Datos?</h2>
+            <p>El modelado de datos es el proceso de crear una representación visual de cómo se organizarán los datos en una base de datos. Incluye definir las entidades, sus relaciones, y cómo se estructurarán los datos.</p>
+            <h2>6. Tipos de Bases de Datos</h2>
+            <p>Según <b>Variabilidad:</b></p>
+            <ul> <b>Estáticas:</b> Los datos no cambian frecuentemente (ej. enciclopedias digitales).</ul>
+            <ul><b>Dinámicas:</b> Los datos cambian con frecuencia (ej. redes sociales, sistemas de gestión).</ul>
+            <p>Según <b>Contenido:</b></p>
+            <ul> <b>Bases de Datos Transaccionales:</b> Para operaciones diarias (ej. ventas, inventarios).</ul>
+            <ul> <b>Bases de Datos Analíticas:</b> Para análisis de datos y reportes (ej. Data Warehouses).</ul>
+            <p>Según Modelo de <b>Base de Datos:</b></p>
+            <ul> <b>Relacional:</b> Datos organizados en tablas (ej. MySQL, PostgreSQL).</ul>
+            <ul> <b>NoSQL:</b> Datos no organizados en tablas (ej. MongoDB, Redis).</ul>
+            <ul> <b>Orientada a Objetos: </b> Datos como objetos (ej. db4o, ObjectDB).
+            </ul>
+            <h2>7. ¿Qué es el Modelo Relacional?</h2>
+            <p>El modelo relacional es un tipo de estructura de base de datos que organiza los datos en tablas (o relaciones) con filas y columnas. Cada tabla tiene filas (registros) y columnas (atributos), y las tablas pueden estar relacionadas entre sí mediante claves.</p>
+            <h2>8. Elementos del Diagrama Entidad-Relacional</h2>
+            <ul> <b>Entidad:</b> Representa un objeto o concepto (ej. Cliente, Producto).</ul>
+            <ul><b>Atributo:</b> Propiedad o característica de una entidad (ej. Nombre, Precio).</ul>
+            <ul><b>Relación:</b> Conexión entre entidades (ej. Compra).</ul>
+            <ul><b>Clave Primaria:</b> Identificador único para cada entidad (ej. ID del Cliente).</ul>
+            <ul><b>Clave Foránea:</b> Referencia a la clave primaria de otra entidad (ej. ID del Cliente en la tabla de Compras).</ul>
+            <h2>9. ¿Qué es una Entidad?</h2>
+            <p>Una entidad es un objeto o concepto en el mundo real que tiene existencia y sobre el cual se quiere guardar información en la base de datos.</p>
+            <h2>10. ¿Qué es un Atributo y sus Tipos?</h2>
+            <p>Un atributo es una característica o propiedad de una entidad.</p>
+            <ul> <b>Atributos Simples:</b> No se pueden dividir en más partes (ej. Nombre, Edad).</ul>
+            <ul> <b>Atributos Compuestos:</b> Se pueden dividir en sub-atributos (ej. Dirección: Calle, Ciudad, Estado).</ul>
+            <ul> <b>Atributos Derivados:</b> Se calculan a partir de otros atributos (ej. Edad calculada a partir de la fecha de nacimiento).</ul>
+            <ul> <b>Atributos Multivaluados:</b> Pueden tener varios valores (ej. Teléfonos de contacto).</ul>
+            <h2>11. ¿Qué es una Relación?</h2>
+            <p>Una relación es una asociación entre dos o más entidades en una base de datos, que define cómo se conectan o interactúan entre sí.</p>
+            <h2>12. Llaves Primarias y Foráneas</h2>
+            <ul> <b>Llave Primaria:</b> Un atributo (o conjunto de atributos) que identifica de manera única a cada registro en una tabla.</ul>
+            <ul> <b>Características:</b> Única, no nula, identificadora.</ul>
+            <ul> <b>Llave Foránea:</b> Un atributo en una tabla que hace referencia a la llave primaria de otra tabla.</ul>
+            <ul> <b>Características:</b> Establece relaciones entre tablas, puede ser nula o repetida.</ul>
+            <p>Ejemplo:</p>
+            <ul> <b>Llave Primaria:</b> ID_Cliente en la tabla Clientes.</ul>
+            <ul> <b>Llave Foránea:</b> ID_Cliente en la tabla Compras que se refiere a ID_Cliente en Clientes.</ul>
+            <h2>13. ¿Qué son las Reglas del Negocio?</h2>
+            <p>Las reglas del negocio son las normas o políticas que definen cómo deben funcionar los procesos en una organización. Estas reglas se implementan en la base de datos para asegurar que los datos se manejen de acuerdo con los requisitos del negocio.</p>
+            <h2>14. ¿Qué es la Cardinalidad o Mapeo?</h2>
+            <p>La cardinalidad o mapeo describe la cantidad de instancias de una entidad que pueden estar relacionadas con una instancia de otra entidad. Se expresa en términos de relaciones 1:1, 1
+                , o N</p>
+                <ul> <b>1:1 (Uno a Uno):</b> Un cliente tiene una única cuenta.</ul>
+                <ul> <b>1 (Uno a Muchos):</b> Un cliente puede hacer muchas compras.
+                    </ul>
+                <ul> <b>N (Muchos a Muchos):</b> Un producto puede estar en muchas compras y una compra puede incluir muchos productos.</ul>
+        </div>
+    </section>
+</body>
+</html>
